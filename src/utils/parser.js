@@ -6,7 +6,7 @@ const toJSON = R.pipe(R.replace('])}while(1);</x>', ''), JSON.parse);
 const assocWithUrl = (username, posts) =>
   posts.map(post => {
     const url = `${BASE_URL}/@${username}/${post.uniqueSlug}`;
-    const imageUrl = `${BASE_IMAGEURL}/${R.path(['virtual', 'previewImage', 'imageId'])}`;
+    const imageUrl = `${BASE_IMAGEURL}/${R.path(['virtuals', 'previewImage', 'imageId'])(post)}`;
     return R.pipe(R.assoc('url', url), R.assoc('imageUrl', imageUrl))(post);
   });
 
