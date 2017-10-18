@@ -11,6 +11,7 @@ const typeDefs = `
     subtitle: String
     uniqueSlug: String!
     url: String!
+    imageUrl: String!
     content: Content!
     firstPublishedAt: Timestamp!
     latestPublishedAt: Timestamp
