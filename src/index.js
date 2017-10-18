@@ -10,5 +10,5 @@ module.exports = router(
   post('/graphql', middleware(graphql)),
   get('/graphiql', middleware(graphiql('/graphql'))),
   get('*', middleware(home)),
-  options('*', option),
+  options('*', option)
 );

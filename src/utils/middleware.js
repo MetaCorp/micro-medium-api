@@ -13,7 +13,7 @@ const middleware = R.compose(
   }),
   compress,
   // TODO: jest problem --forceExit
-  R.curry(rateLimit)({ window: 1000, limit: 1 }),
+  R.curry(rateLimit)({ window: 1000, limit: 1 })
 );
 
 module.exports = middleware;

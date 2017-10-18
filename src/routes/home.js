@@ -14,7 +14,7 @@ const home = (req, res) =>
 
 
     https://github.com/evenchange4/micro-medium-api
-`,
+`
   );
 
 module.exports = home;

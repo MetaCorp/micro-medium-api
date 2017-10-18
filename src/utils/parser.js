@@ -15,7 +15,7 @@ const posts = R.pipe(
   R.converge(assocWithUrl, [
     R.path(['user', 'username']),
     R.pipe(R.path(['references', 'Post']), R.values),
-  ]),
+  ])
 );
 
 const user = R.path(['payload', 'user']);
